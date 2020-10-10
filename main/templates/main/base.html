@@ -1,0 +1,38 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PSU Kabupaten Sidoarjo</title>
+  
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+    <!-- CSS -->
+    {% block css %}
+    <!-- Add your css here -->
+    {% endblock css %}
+  </head>
+  <body>
+    <nav class="navbar navbar-light" style="background-color: #03a678;">
+      <a class="navbar-brand" href="/">
+          <img src="http://4.bp.blogspot.com/-FtOrR7FqtEg/Tdufk5MUD9I/AAAAAAAADrE/1FMbaYHMrR8/s320/Kabupaten_Sidoarjo.png" class="m-2" alt="logo_sidoarjo" width="75" height="75">
+      </a>
+      <span class="text-white" style="font-size: x-large;">E-PSU PERUMAHAN KABUPATEN SIDOARJO</span> 
+    </nav>
+  
+    {% include "main/includes/navbar.html" %}
+    <div class="container">
+      <br>
+      {% block content %}
+      {% endblock %}
+    </div> 
+    
+    {% include "main/includes/footer.html" %}
+    
+    
+    <!-- JS -->
+    {% block js %}
+    <!-- Add your js here -->
+    {% endblock js %}
+  </body>

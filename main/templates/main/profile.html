@@ -1,0 +1,106 @@
+{% extends "main/base.html" %}
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style>
+    .user-row {
+        margin-bottom: 14px;
+    }
+
+    .user-row:last-child {
+        margin-bottom: 0;
+    }
+
+    .dropdown-user {
+        margin: 13px 0;
+        padding: 5px;
+        height: 100%;
+    }
+
+    .dropdown-user:hover {
+        cursor: pointer;
+    }
+
+    .center {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .table-user-information > tbody > tr {
+        border-top: 1px solid rgb(221, 221, 221);
+        
+    }
+
+    .table-user-information > tbody > tr:first-child {
+        border-top: 0;
+        
+    }
+
+    .table-user-information > tbody > tr > td {
+        border-top: 0;
+        
+    }
+    .toppad{
+        margin-top:20px;
+        margin-left: 100px; 
+        margin-right: 100px;
+    }
+    
+</style>
+
+{% block content %}
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+
+<h1 style="text-align:center">Profil</h1><br><br>
+<div class="container" style="margin-bottom: 150;">
+    <!-- <p>Nama Pengguna : {{ user.username }}</p>
+    <p>Email : {{ user.email }}</p>
+    <p>Nama Pertama : {{ user.first_name }}</p>
+    <p>Nama Belakang : {{ user.last_name }}</p>  
+    <a href="/edit_profile"><button  class="btn btn-primary"><strong>Ubah</strong></button></a> -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-offset-6 col-sm-offset-6 col-md-offset-3 col-lg-offset-3 toppad" >
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="text-align: center"></h3>
+                </div>
+                <div class="panel-body center">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 " style="text-align:center"> 
+                            <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                        </div>
+                        <div class=" col-md-9 col-lg-9 "> 
+                            <table class="table table-user-information center" style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td>Username</td>
+                                    <td>{{ user.username }}</td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td>{{ user.email }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Nama Lengkap</td>
+                                    <td>{{ user.first_name }} {{ user.last_name }}</td>
+                                </tr>
+                                
+                            </tbody>
+                            </table>
+                            <a href="/edit_profile"><button  class="btn btn-primary"><strong>Ubah</strong></button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+

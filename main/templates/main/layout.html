@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PSU Kabupaten Sidoarjo</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS -->
+    {% block css %}
+    <!-- Add your css here -->
+    {% endblock css %}
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-light" style="background-color: #03a678;">
+        <a class="navbar-brand" href="#">
+            <img src="http://4.bp.blogspot.com/-FtOrR7FqtEg/Tdufk5MUD9I/AAAAAAAADrE/1FMbaYHMrR8/s320/Kabupaten_Sidoarjo.png" class="m-2" alt="logo_sidoarjo" width="75" height="75">
+        </a>
+        <span class="text-white" style="font-size: x-large;">E-PSU PERUMAHAN KABUPATEN SIDOARJO</span> 
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #025b42;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="/epsu">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pelaporan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ajukan Laporan</a>
+                        <a class="dropdown-item" href="#">Cek Status</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pemantauan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pengelolaan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sosialisasi Serah Terima</a>
+                        <a class="dropdown-item" href="#">Laporan Masyarakat</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <!-- Belum Login -->
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/login">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/register">Register</a>
+                </li>
+
+                <!-- Sudah Login -->
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link text-white dropdown-toggle" href="/account" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        {{user.username}} <span class="caret"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Change profile</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/logout">Logout</a>
+
+                        <form id="logout-form" action="#" method="POST" style="display: none;">
+                            <!-- Insert csrf token here -->
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    <!-- Replace content here -->
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4" style="background-color: #03a678;">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- Footer Content -->
+                    <h5 class="text-uppercase text-white">Footer Content</h5>
+                    <p class="text-white">Here you can use rows and columns to organize your footer content.</p>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase text-white">Pelaporan</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase text-white">Pemantauan</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-3">
+                    <!-- Links -->
+                    <h5 class="text-uppercase text-white">Pengelolaan</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-white" style="background-color: #025b42">
+            © 2020 Copyright:<a href="https://mdbootstrap.com/" class="text-white"> Kabupaten Sidoarjo</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    {% block js %}
+    <!-- Add your js here -->
+    {% endblock js %}
+</body>
+</html>

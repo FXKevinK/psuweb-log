@@ -1,0 +1,225 @@
+<style>
+body {
+	margin:  0;
+}
+.page-content {
+	width: 100%;
+	margin:  0 auto;
+	background-color: #ced0cf;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-o-justify-content: center;
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-o-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+}
+.form-v6-content  {
+	margin-top: 0;
+	background: #025b42;
+	width: 968px;
+	border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden; 
+	margin: 80px 0;
+	color: #025b42;
+	font-weight: normal;
+	position: relative;
+	display: -webkit-flex;
+}
+.form-v6-content .form-left {
+	margin-bottom: -6px;
+}
+.form-v6-content .form-left img {
+	border-top-left-radius: auto;
+	border-bottom-left-radius: auto;
+}
+.form-v6-content .form-detail {
+    padding: 30px 40px;
+	position: relative;
+	width: 100%;
+}
+.form-v6-content .form-detail h2{
+	color: rgb(255, 255, 255);
+	font-size: 35px;
+	text-align: center;
+	position: relative;
+	padding: 6px 0 0;
+	margin-bottom: 47px;
+}
+
+p{
+	color: #333;
+}
+
+.reg-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height:80%;
+    -o-object-fit: contain;
+    object-fit: contain;
+     } 
+
+.form-v6-content .form-row {
+    width: 100%;
+    
+}
+.form-v6-content .form-detail .form-row-last {
+	text-align: center;
+}
+.form-v6-content .form-detail .input-text {
+	margin-bottom: 35px;
+}
+.form-v6-content .form-detail input {
+	border: 1px solid #d5dae2;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal; }
+    .form-v6-content .form-control::-webkit-input-placeholder {
+      color: #919aa3; }
+    .form-v6-content .form-control::-moz-placeholder {
+      color: #919aa3; }
+    .form-v6-content .form-control:-ms-input-placeholder {
+      color: #919aa3; }
+    .form-v6-content .form-control::-ms-input-placeholder {
+      color: #919aa3; }
+    .form-v6-content .form-control::placeholder {
+      color: #919aa3; }
+
+.form-v6-content .form-detail .form-row input:focus {
+	border-bottom: 2px solid #025b42;
+}
+.form-v6-content .form-detail .register {
+	/* background: #fe892a; */
+	background: #025b42;
+	border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	width: 160px;
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	border: none;
+	margin: 11px 0 50px 0px;
+	cursor: pointer;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+	font-weight: normal;
+	font-size: 14px;
+}
+.form-v6-content .form-detail .register:hover {
+	/* background: #e37b27; */
+	background: #ff9900;
+}
+.form-v6-content .form-detail .form-row-last input {
+	padding: 13px;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #666;
+  font-size: 14px;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #666;
+  font-size: 14px;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #666;
+  font-size: 14px;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+	.form-v6-content {
+		margin: 180px 20px;
+		flex-direction:  column;
+		-o-flex-direction:  column;
+		-ms-flex-direction:  column;
+		-moz-flex-direction:  column;
+		-webkit-flex-direction:  column;
+	}
+	.form-v6-content .form-left {
+		width: 100%;
+	}
+	.form-v6-content .form-left img {
+		width: 100%;
+		border-bottom-left-radius: 0px;
+	    border-top-right-radius: 8px;
+	}
+	.form-v6-content .form-detail {
+		padding: 30px 20px 30px 20px;
+	    width: auto;
+	}
+	.form-v6-content .form-detail .form-row input {
+		width: 96%;
+	}
+	.form-v6-content .form-detail .register {
+		margin-bottom: 80px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.form-v6-content .form-detail .form-row input {
+		width: 94%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.form-v6-content .form-detail .form-row input {
+	    width: 89%;
+	}
+}
+.form-group-align{
+  margin-left:70;
+  margin-right:70;
+
+
+}
+
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+{% load crispy_forms_tags %}
+<body class="form-v6">
+	<div class="page-content">
+		<div class="form-v6-content">
+			<form class="form-detail text-white" method="post">
+        <h2>REGISTRASI</h2>
+        <a href="/" class="d-flex justify-content-center align-items-center" >
+          <img src="http://4.bp.blogspot.com/-FtOrR7FqtEg/Tdufk5MUD9I/AAAAAAAADrE/1FMbaYHMrR8/s320/Kabupaten_Sidoarjo.png" alt="logo_sidoarjo"  height="200" width="225">
+		</a><br>
+		{% csrf_token %}
+				<div id="div_id_username" class="form-group form-group-align"> <label for="id_username" class=" requiredField">
+          Nama Pengguna </label> <div class=""> <input type="text" name="username" maxlength="150" autofocus class="textinput textInput form-control" required id="id_username"> <small id="hint_id_username" class="form-text text-white">Diperlukan. 150 karakter atau kurang. Hanya huruf, angka, dan @/./+/-/_ saja</small> </div> </div> 
+        <div id="div_id_email" class="form-group form-group-align"> <label for="id_email" class=" requiredField">
+          Email </label> <div class=""> <input type="email" name="email" class="emailinput form-control" required id="id_email"> </div> </div> 
+        <div id="div_id_first_name" class="form-group form-group-align"> <label for="id_first_name" class=" requiredField">
+          Nama Depan </label> <div class=""> <input type="text" name="first_name" maxlength="20" class="textinput textInput form-control" required id="id_first_name"> </div> </div> 
+        <div id="div_id_last_name" class="form-group form-group-align"> <label for="id_last_name" class=" requiredField">
+          Nama Belakang</label> <div class=""> <input type="text" name="last_name" maxlength="20" class="textinput textInput form-control" required id="id_last_name"> </div> </div> 
+        
+        <div id="div_id_password1" class="form-group form-group-align"> <label for="id_password1" class=" requiredField">
+          Kata Sandi </label> <div class=""> <input type="password" name="password1" autocomplete="new-password" class="textinput textInput form-control" required id="id_password1"> <small id="hint_id_password1" class="form-text text-white"><ul><li>Kata sandi anda tidak boleh mirip dengan informasi pribadi anda.</li><li>Kata sandi anda harus memiliki minimal 8 karakter.</li><li>Jangan menggunakan kata sandi yang sering digunakan.</li><li>Kata sandi anda tidak boleh hanya angka saja.</li></ul></small> </div> </div> 
+        <div id="div_id_password2" class="form-group form-group-align"> <label for="id_password2" class=" requiredField">
+          Konfirmasi Kata Sandi</label> <div class=""> <input type="password" name="password2" autocomplete="new-password" class="textinput textInput form-control" required id="id_password2"> <small id="hint_id_password2" class="form-text text-white">Masukkan kata sandi anda yang sudah anda masukkan sebelumnya.</small> </div> </div> 
+        <br><div style="position:absolute;left: 45%;"><button  type="submit" class="btn btn-primary"><strong>Daftar</strong></button></div>
+		<br><br><br>
+        <span class="text-white" style="margin-left:70">Jika sudah memiliki akun, silahkan <a href="/login"><strong>Masuk</strong></a> menggunakan akun anda.</span> <br>
+			</form>
+		</div>
+	</div>
+</body>

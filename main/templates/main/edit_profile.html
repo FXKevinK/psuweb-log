@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<h1 style="text-align:center">Ubah Profil</h1><br><br>
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}   
+        <a href="/change_password"><strong>Ubah Kata Sandi</strong></a><br><br>
+        <button type="submit" class="btn btn-primary"><strong>Ubah</strong></button>
+    </form>
+</div>
+{% endblock %}
+
